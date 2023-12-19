@@ -44,8 +44,8 @@ server.use(cors());
 
 const s3 = new aws.S3({
     region: process.env.BUCKET_REGION,
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.AWS_ACCESS_KEYS,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEYS,
 });
 
 // functions
