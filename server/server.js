@@ -1022,6 +1022,12 @@ server.post("/all-notification-count", verifyJWT, (req, res) => {
 
 })
 
+server.get("/", (req, res) => {
+	return res.json({
+		success: true,
+		message: "Your server is up and running ...",
+	});
+});
 server.listen(PORT, () => {
     console.log('listening on port -> ' + PORT)
 });
